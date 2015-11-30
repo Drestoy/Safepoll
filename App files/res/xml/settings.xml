@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 
+    <PreferenceCategory
+        android:key="pref_general_settings"
+        android:title="@string/pref_general_settings" >
+        <CheckBoxPreference
+            android:key="pref_activate_notifications"
+            android:summary="@string/pref_summary_activate_notifications"
+            android:title="@string/pref_title_activate_notifications"
+            android:defaultValue="true" />
+        <Preference 
+            android:key="pref_notif_refresh_time"
+            android:dependency="pref_activate_notifications"
+            android:summary="@string/pref_summary_notif_refresh_time"
+            android:title="@string/pref_title_notif_refresh_time" />
+    </PreferenceCategory>
+     -->
+    <PreferenceCategory
+        android:key="pref_user"
+        android:title="@string/pref_user" >
+        <uma.finalproject.safepoll.SafepollPreference 
+            android:key="pref_user_pass"
+            android:title="@string/pref_title_user_pass"
+            android:summary="@string/pref_summary_user_pass"
+            android:dialogMessage="dialogmessage"  />
+        <Preference 
+            android:key="pref_user_select_cert"
+            android:summary="@string/pref_summary_select_cert"
+            android:title="@string/pref_title_select_cert" />
+        <Preference 
+            android:key="pref_user_chain_cert"
+            android:summary="@string/pref_summary_chain_cert"
+            android:title="@string/pref_title_chain_cert" />
+        <Preference 
+            android:key="pref_user_update_cert"
+            android:summary="@string/pref_summary_update_cert"
+            android:title="@string/pref_title_update_cert" />
+        
+      <!--   
+        <Preference 
+            android:key="pref_user_delete_cert"
+            android:summary="Borrar"
+            android:title="@string/pref_title_update_cert" />
+       -->   
+        
+        
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_about"
+        android:title="@string/pref_about" >
+        
+        <EditTextPreference 
+            android:key="pref_about_version"
+            android:title="@string/pref_title_about_version"
+            android:enabled="false" />
+        
+    </PreferenceCategory>
+    
+    
+
+</PreferenceScreen>

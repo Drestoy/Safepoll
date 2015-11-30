@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+        
+    
+    <TextView
+        android:id="@+id/newpoll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/newpoll_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    	<EditText
+        android:id="@+id/newpoll_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLines="10"
+        android:layout_below="@id/newpoll_title"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/newpoll_description" >
+
+        <requestFocus />
+    </EditText>
+	
+    <EditText
+        android:id="@+id/newpoll_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:layout_below="@+id/newpoll_description"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/newpoll_question" />
+    
+    <CheckBox 
+        android:id="@+id/newpoll_signed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpoll_question"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newpoll_signed" />
+    
+    <LinearLayout 
+        android:id="@+id/newpoll_pickers_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpoll_signed">
+        
+        <Button
+            android:id="@+id/showDatePicker_button" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="@string/newpoll_pick_date" 
+    		android:onClick="showDatePickerDialog"
+    		android:layout_weight="50" />
+        
+        <Button
+            android:id="@+id/showTimePicker_button" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="@string/newpoll_pick_time" 
+    		android:onClick="showTimePickerDialog"
+    		android:layout_weight="50" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/answers_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_below="@+id/newpoll_pickers_layout" >
+        
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/newpoll_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answers_layout"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newpoll_button" />
+    
+
+</RelativeLayout>
+</ScrollView>

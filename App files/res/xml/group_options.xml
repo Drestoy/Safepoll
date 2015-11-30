@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="pref_group_settings"
+        android:title="@string/pref_group_settings" >
+        <CheckBoxPreference
+            android:key="pref_group_private"
+            android:summary="@string/pref_summary_group_private"
+            android:title="@string/pref_title_group_private" />
+        <CheckBoxPreference 
+            android:key="pref_group_requeriment"
+            android:summary="@string/pref_summary_group_requeriment"
+            android:title="@string/pref_title_group_requeriment" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

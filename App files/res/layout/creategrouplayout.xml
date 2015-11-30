@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+
+    	<EditText
+        android:id="@+id/newgroup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="@string/newgroup_name" >
+
+        <requestFocus />
+    </EditText>
+	
+    <EditText
+        android:id="@+id/newgroup_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newgroup_name"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:maxLength="100"
+        android:maxLines="10"
+        android:hint="@string/newgroup_description" />
+    
+    <CheckBox 
+        android:id="@+id/newgroup_option_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newgroup_description"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newgroup_option_private" />
+    <CheckBox 
+        android:id="@+id/newgroup_option_requeriment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newgroup_option_private"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newgroup_option_requeriment" />
+    
+    <Button
+        android:id="@+id/newgroup_ButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/newgroup_option_requeriment"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newgroup_buttonOK" />
+    
+    </RelativeLayout>
+
+</LinearLayout>
